@@ -1,10 +1,10 @@
-# 🥑 SmartNutri - Trợ Lý Dinh Dưỡng & Ngân Sách Thông Minh
+# SmartNutri - Trợ Lý Dinh Dưỡng & Ngân Sách Thông Minh
 
 > Hệ thống trợ lý dinh dưỡng và quản lý ngân sách sinh viên Việt Nam, giải quyết bài toán: **Tối ưu dinh dưỡng thuần Việt theo ngân sách sinh viên**.
 
 ---
 
-## 🏛️ Kiến Trúc Hệ Thống
+## Kiến Trúc Hệ Thống
 
 ```
 SmartNutri/
@@ -39,59 +39,12 @@ SmartNutri/
 
 ---
 
-## 🚀 Hướng Dẫn Chạy Dự Án
+
 
 ### Bước 1: Khởi động Backend (Spring Boot + MySQL)
 
-1. **Kiểm tra file cấu hình môi trường**:
-   File `.env` hoặc `backend/src/main/resources/application-mysql.properties` đã được cấu hình mật khẩu MySQL:
-   ```properties
-   DB_HOST=localhost
-   DB_PORT=3306
-   DB_NAME=smartnutri
-   DB_USERNAME=root
-   DB_PASSWORD=Cuong@592005
-   ```
-   *(Database `smartnutri` đã được tự động tạo và nạp dữ liệu ban đầu gồm 13 món ăn sinh viên chuẩn, tủ lạnh ảo và nhật ký).*
 
-2. **Chạy server Backend**:
-   Mở terminal tại thư mục `backend/` và chạy:
-   ```powershell
-   cd backend
-   .\mvnw.cmd spring-boot:run
-   ```
-   Server sẽ khởi động tại: **`http://localhost:8080`**
-   - API Kiểm tra: `http://localhost:8080/api/dashboard/stats?userId=1`
-   - API Tối ưu hóa: `POST http://localhost:8080/api/optimizer/target-meal`
-
----
-
-### Bước 2: Khởi động Ứng Dụng Mobile / Web (Flutter)
-
-Mở terminal mới tại thư mục `mobile/`:
-
-#### Cách 1: Chạy trực tiếp trên trình duyệt Web (Chrome)
-*(Nhanh nhất, nhẹ nhất, xem và test đầy đủ mọi tính năng ngay lập tức)*
-```powershell
-cd mobile
-flutter run -d chrome
-```
-*Hoặc mở trực tiếp bản build Web đang được serve sẵn tại:* **`http://localhost:3000`**
-
-#### Cách 2: Chạy trên Thiết bị thật Android / Emulator
-1. Cắm điện thoại Android bật chế độ **USB Debugging** (hoặc mở Android Studio Emulator).
-2. Kiểm tra thiết bị nhận diện:
-   ```powershell
-   flutter devices
-   ```
-3. Chạy ứng dụng:
-   ```powershell
-   flutter run
-   ```
-
----
-
-## 🌟 4 Phân Hệ Tính Năng Cốt Lõi Theo `HD.txt`
+## 4 Phân Hệ Tính Năng Cốt Lõi Theo `HD.txt`
 
 ### 1. Phân hệ 1: Thị giác & Nhận diện Món ăn Việt (Snap & Log)
 - Chụp hoặc chọn ảnh đĩa thức ăn truyền thống Việt Nam (Cơm tấm, Phở bò, Bún chả...).
