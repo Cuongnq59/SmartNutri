@@ -1,0 +1,45 @@
+# Environment variables & secrets (QUAN TRỌNG: không đẩy file này lên GitHub)
+.env
+*.env
+backend/.env
+mobile/.env
+
+# IDE / Editor files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backend (Spring Boot / Maven)
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+*.class
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings
+backend/.springBeans
+backend/.sts4-cache
+
+# Mobile (Flutter / Dart)
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.pub-cache/
+mobile/.pub/
+mobile/build/
+mobile/.metadata
+mobile/android/app/debug/
+mobile/android/app/profile/
+mobile/android/app/release/
+mobile/ios/Flutter/.last_build_id
+mobile/.widget_preview/
+
+# Logs
+*.log
