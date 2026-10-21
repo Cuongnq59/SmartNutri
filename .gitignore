@@ -4,6 +4,9 @@
 backend/.env
 mobile/.env
 
+# Local documents / Notes
+HD.txt
+
 # IDE / Editor files
 .idea/
 .vscode/
